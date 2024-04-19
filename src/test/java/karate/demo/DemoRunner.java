@@ -25,13 +25,18 @@ class DemoRunner {
         return Karate.run().relativeTo(getClass());
     }
 
-    @Test
-    void testManuallyAll() {
-        // Explicitly informs the package of features to be executed.
-        Results results = Runner.path("classpath:karate/demo")
-                                .tags("~@CreateValue")
-                                .parallel(5);
-        assertEquals(0, results.getFailCount(), results.getErrorMessages());
-    }
+//    @Test
+//    void testManuallyAll() {
+//        // Explicitly informs the package of features to be executed.
+//        Results results = Runner.path("classpath:karate/demo")
+//                                .tags("~@CreateValue")
+//                                .parallel(5);
+//        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+//    }
 
+    
+//	@Karate.Test
+//	Karate testTagsWithoutFeatureName() {
+//		return Karate.run("classpath:/karate/demo").tags("@scenari02").relativeTo(getClass());
+//	}
 }
